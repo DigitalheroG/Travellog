@@ -1,0 +1,1796 @@
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [16/Mar/2019 13:00:38] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [16/Mar/2019 14:45:51] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR app.py:1761 Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\redis\connection.py", line 492, in connect
+    sock = self._connect()
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\redis\connection.py", line 550, in _connect
+    raise err
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\redis\connection.py", line 538, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 2291, in wsgi_app
+    ctx.push()
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\ctx.py", line 377, in push
+    self.app, self.request
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask_session\sessions.py", line 132, in open_session
+    val = self.redis.get(self.key_prefix + sid)
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\redis\client.py", line 1264, in get
+    return self.execute_command('GET', name)
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\redis\client.py", line 772, in execute_command
+    connection = pool.get_connection(command_name, **options)
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\redis\connection.py", line 994, in get_connection
+    connection.connect()
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\redis\connection.py", line 497, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to 127.0.0.1:6379. 由于目标计算机积极拒绝，无法连接。.
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 13:59:51] "GET / HTTP/1.1" 500 -
+ERROR app.py:1761 Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\redis\connection.py", line 492, in connect
+    sock = self._connect()
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\redis\connection.py", line 550, in _connect
+    raise err
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\redis\connection.py", line 538, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 2291, in wsgi_app
+    ctx.push()
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\ctx.py", line 377, in push
+    self.app, self.request
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask_session\sessions.py", line 132, in open_session
+    val = self.redis.get(self.key_prefix + sid)
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\redis\client.py", line 1264, in get
+    return self.execute_command('GET', name)
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\redis\client.py", line 772, in execute_command
+    connection = pool.get_connection(command_name, **options)
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\redis\connection.py", line 994, in get_connection
+    connection.connect()
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\redis\connection.py", line 497, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to 127.0.0.1:6379. 由于目标计算机积极拒绝，无法连接。.
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 13:59:52] "GET /favicon.ico HTTP/1.1" 500 -
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR app.py:1761 Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\redis\connection.py", line 492, in connect
+    sock = self._connect()
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\redis\connection.py", line 550, in _connect
+    raise err
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\redis\connection.py", line 538, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 2291, in wsgi_app
+    ctx.push()
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\ctx.py", line 377, in push
+    self.app, self.request
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask_session\sessions.py", line 132, in open_session
+    val = self.redis.get(self.key_prefix + sid)
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\redis\client.py", line 1264, in get
+    return self.execute_command('GET', name)
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\redis\client.py", line 772, in execute_command
+    connection = pool.get_connection(command_name, **options)
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\redis\connection.py", line 994, in get_connection
+    connection.connect()
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\redis\connection.py", line 497, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to 127.0.0.1:6379. 由于目标计算机积极拒绝，无法连接。.
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 14:00:26] "GET / HTTP/1.1" 500 -
+ERROR app.py:1761 Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\redis\connection.py", line 492, in connect
+    sock = self._connect()
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\redis\connection.py", line 550, in _connect
+    raise err
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\redis\connection.py", line 538, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 2291, in wsgi_app
+    ctx.push()
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\ctx.py", line 377, in push
+    self.app, self.request
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask_session\sessions.py", line 132, in open_session
+    val = self.redis.get(self.key_prefix + sid)
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\redis\client.py", line 1264, in get
+    return self.execute_command('GET', name)
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\redis\client.py", line 772, in execute_command
+    connection = pool.get_connection(command_name, **options)
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\redis\connection.py", line 994, in get_connection
+    connection.connect()
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\redis\connection.py", line 497, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to 127.0.0.1:6379. 由于目标计算机积极拒绝，无法连接。.
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 14:00:27] "GET /favicon.ico HTTP/1.1" 500 -
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR app.py:1761 Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\redis\connection.py", line 492, in connect
+    sock = self._connect()
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\redis\connection.py", line 550, in _connect
+    raise err
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\redis\connection.py", line 538, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 2291, in wsgi_app
+    ctx.push()
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\ctx.py", line 377, in push
+    self.app, self.request
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask_session\sessions.py", line 132, in open_session
+    val = self.redis.get(self.key_prefix + sid)
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\redis\client.py", line 1264, in get
+    return self.execute_command('GET', name)
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\redis\client.py", line 772, in execute_command
+    connection = pool.get_connection(command_name, **options)
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\redis\connection.py", line 994, in get_connection
+    connection.connect()
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\redis\connection.py", line 497, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to 127.0.0.1:6379. 由于目标计算机积极拒绝，无法连接。.
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 14:00:50] "GET / HTTP/1.1" 500 -
+ERROR app.py:1761 Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\redis\connection.py", line 492, in connect
+    sock = self._connect()
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\redis\connection.py", line 550, in _connect
+    raise err
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\redis\connection.py", line 538, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 2291, in wsgi_app
+    ctx.push()
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\ctx.py", line 377, in push
+    self.app, self.request
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask_session\sessions.py", line 132, in open_session
+    val = self.redis.get(self.key_prefix + sid)
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\redis\client.py", line 1264, in get
+    return self.execute_command('GET', name)
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\redis\client.py", line 772, in execute_command
+    connection = pool.get_connection(command_name, **options)
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\redis\connection.py", line 994, in get_connection
+    connection.connect()
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\redis\connection.py", line 497, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to 127.0.0.1:6379. 由于目标计算机积极拒绝，无法连接。.
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 14:00:51] "GET /favicon.ico HTTP/1.1" 500 -
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR app.py:1761 Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\redis\connection.py", line 492, in connect
+    sock = self._connect()
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\redis\connection.py", line 550, in _connect
+    raise err
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\redis\connection.py", line 538, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 2291, in wsgi_app
+    ctx.push()
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\ctx.py", line 377, in push
+    self.app, self.request
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask_session\sessions.py", line 132, in open_session
+    val = self.redis.get(self.key_prefix + sid)
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\redis\client.py", line 1264, in get
+    return self.execute_command('GET', name)
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\redis\client.py", line 772, in execute_command
+    connection = pool.get_connection(command_name, **options)
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\redis\connection.py", line 994, in get_connection
+    connection.connect()
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\redis\connection.py", line 497, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to 127.0.0.1:6379. 由于目标计算机积极拒绝，无法连接。.
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 14:02:00] "GET / HTTP/1.1" 500 -
+ERROR app.py:1761 Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\redis\connection.py", line 492, in connect
+    sock = self._connect()
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\redis\connection.py", line 550, in _connect
+    raise err
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\redis\connection.py", line 538, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 2291, in wsgi_app
+    ctx.push()
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\ctx.py", line 377, in push
+    self.app, self.request
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask_session\sessions.py", line 132, in open_session
+    val = self.redis.get(self.key_prefix + sid)
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\redis\client.py", line 1264, in get
+    return self.execute_command('GET', name)
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\redis\client.py", line 772, in execute_command
+    connection = pool.get_connection(command_name, **options)
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\redis\connection.py", line 994, in get_connection
+    connection.connect()
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\redis\connection.py", line 497, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to 127.0.0.1:6379. 由于目标计算机积极拒绝，无法连接。.
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 14:02:01] "GET /favicon.ico HTTP/1.1" 500 -
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR app.py:1761 Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\redis\connection.py", line 492, in connect
+    sock = self._connect()
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\redis\connection.py", line 550, in _connect
+    raise err
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\redis\connection.py", line 538, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 2291, in wsgi_app
+    ctx.push()
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\ctx.py", line 377, in push
+    self.app, self.request
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask_session\sessions.py", line 132, in open_session
+    val = self.redis.get(self.key_prefix + sid)
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\redis\client.py", line 1264, in get
+    return self.execute_command('GET', name)
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\redis\client.py", line 772, in execute_command
+    connection = pool.get_connection(command_name, **options)
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\redis\connection.py", line 994, in get_connection
+    connection.connect()
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\redis\connection.py", line 497, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to 127.0.0.1:6379. 由于目标计算机积极拒绝，无法连接。.
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 14:07:03] "GET / HTTP/1.1" 500 -
+ERROR app.py:1761 Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\redis\connection.py", line 492, in connect
+    sock = self._connect()
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\redis\connection.py", line 550, in _connect
+    raise err
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\redis\connection.py", line 538, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 2291, in wsgi_app
+    ctx.push()
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\ctx.py", line 377, in push
+    self.app, self.request
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask_session\sessions.py", line 132, in open_session
+    val = self.redis.get(self.key_prefix + sid)
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\redis\client.py", line 1264, in get
+    return self.execute_command('GET', name)
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\redis\client.py", line 772, in execute_command
+    connection = pool.get_connection(command_name, **options)
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\redis\connection.py", line 994, in get_connection
+    connection.connect()
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\redis\connection.py", line 497, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to 127.0.0.1:6379. 由于目标计算机积极拒绝，无法连接。.
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 14:07:04] "GET /favicon.ico HTTP/1.1" 500 -
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 14:07:44] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 14:07:44] "GET /favicon.ico HTTP/1.1" 404 -
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 14:24:56] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 14:53:34] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 14:58:15] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 14:58:28] "GET /favicon.ico HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 14:58:37] "GET /templates/404.html HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 14:58:50] "GET /templates/blog.html HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:00:04] "GET /favicon.ico HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:00:24] "GET /static/html/blog.html HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:00:24] "GET /static/html/css/bootstrap.css HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:00:24] "GET /static/html/css/style.css HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:00:24] "GET /static/html/js/jquery.min.js HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:00:24] "GET /static/html/images/logo.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:00:24] "GET /static/html/images/blog1.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:00:24] "GET /static/html/images/blog2.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:00:24] "GET /static/html/images/blog3.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:00:24] "GET /static/html/images/twter.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:00:24] "GET /static/html/js/jquery.min.js HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:00:25] "GET /static/html/images/img9.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:00:25] "GET /static/html/images/img3.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:00:25] "GET /static/html/images/img1.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:00:25] "GET /static/html/images/img10.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:00:25] "GET /static/html/images/img4.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:00:25] "GET /static/html/images/img6.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:00:25] "GET /static/html/images/twter.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:00:32] "POST /static/html/blog.html HTTP/1.1" 405 -
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:09:38] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:09:40] "GET /favicon.ico HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:10:18] "GET /static/detail.html HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:10:29] "GET /static/html/detail.html HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:10:29] "GET /static/css/reset.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:10:29] "GET /static/js/jquery-1.12.4.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:10:29] "GET /static/js/main.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:10:29] "GET /static/js/detail.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:10:29] "GET /static/css/main.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:10:29] "GET /static/images/logo.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:10:29] "GET /static/images/person01.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:10:29] "GET /static/images/cat.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:10:29] "GET /static/images/worm.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:10:29] "GET /static/images/user_pic.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:10:29] "GET /static/images/pic_code.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:10:29] "GET /static/images/comment_icon.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:10:29] "GET /static/images/clock.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:10:29] "GET /static/images/zan_icon.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:10:29] "GET /static/images/collect_icons.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:10:29] "GET /static/images/reply_icon.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:10:29] "GET /static/images/focus_icons.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:10:29] "GET /static/images/hit_icon.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:11:33] "GET /static/images/focus_icons.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:11:33] "POST /news/followed_user HTTP/1.1" 404 -
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:32:04] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:32:42] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:32:42] "GET /css/style.css HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:32:42] "GET /js/jquery.min.js HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:32:42] "GET /css/bootstrap.css HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:32:42] "GET /images/logo.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:32:42] "GET /images/img4.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:32:42] "GET /images/img1.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:32:42] "GET /images/img6.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:32:42] "GET /images/img2.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:32:42] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:32:42] "GET /js/jquery.min.js HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:32:42] "GET /images/img3.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:32:42] "GET /images/img5.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:32:42] "GET /images/img7.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:32:42] "GET /images/img9.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:32:42] "GET /images/img10.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:32:42] "GET /images/img8.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:32:42] "GET /images/img11.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:32:42] "GET /images/img4.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:32:42] "GET /images/img1.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:32:42] "GET /images/img6.jpg HTTP/1.1" 404 -
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:33:13] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:33:13] "GET /static/js/index.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:33:13] "GET /images/person01.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:33:13] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:33:13] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:33:13] "GET /images/pic_code.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:33:13] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:33:13] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:33:13] "GET /static/images/clock.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:33:13] "GET /static/images/hit_icon.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:33:13] "GET /news_list?cid=1&page=1 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:34:59] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:34:59] "GET /images/person01.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:34:59] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:34:59] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:34:59] "GET /images/pic_code.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:34:59] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:34:59] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:34:59] "GET /static/images/clock.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:34:59] "GET /static/images/hit_icon.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:34:59] "GET /news_list?cid=1&page=1 HTTP/1.1" 404 -
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:41:57] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:41:57] "GET /images/person01.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:41:57] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:41:57] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:41:57] "GET /images/pic_code.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:41:57] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:41:57] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:41:57] "GET /static/images/clock.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:41:57] "GET /static/images/hit_icon.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:41:57] "GET /news_list?cid=1&page=1 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:41:59] "GET /news_list?cid=2&page=1 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:42:00] "GET /news_list?cid=4&page=1 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:42:00] "GET /news_list?cid=5&page=1 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:42:00] "GET /news_list?cid=3&page=1 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:42:01] "GET /news_list?cid=1&page=1 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:42:01] "GET /news_list?cid=0&page=1 HTTP/1.1" 404 -
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:44:23] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:44:23] "GET /images/person01.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:44:23] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:44:23] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:44:23] "GET /images/pic_code.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:44:23] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:44:23] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:44:23] "GET /static/images/clock.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:44:23] "GET /static/images/hit_icon.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:44:23] "GET /news_list?cid=1&page=1 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:44:24] "GET /news_list?cid=2&page=1 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:44:25] "GET /news_list?cid=3&page=1 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:44:25] "GET /news_list?cid=4&page=1 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:44:26] "GET /news_list?cid=5&page=1 HTTP/1.1" 404 -
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:52:58] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:52:58] "GET /images/person01.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:52:58] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:52:58] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:52:58] "GET /images/pic_code.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:52:58] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:52:58] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:52:58] "GET /static/images/clock.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:52:58] "GET /static/images/hit_icon.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:52:58] "GET /news_list?cid=1&page=1 HTTP/1.1" 404 -
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:53:40] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:53:40] "GET /images/person01.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:53:40] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:53:40] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:53:40] "GET /images/pic_code.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:53:40] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:53:40] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:53:40] "GET /news_list?cid=1&page=1 HTTP/1.1" 404 -
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:57:46] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:57:46] "GET /images/person01.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:57:46] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:57:46] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:57:46] "GET /images/pic_code.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:57:46] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:57:46] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:57:46] "GET /news_list?cid=1&page=1 HTTP/1.1" 404 -
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:58:43] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:58:43] "GET /images/person01.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:58:43] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:58:43] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:58:43] "GET /images/pic_code.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:58:43] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:58:43] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:58:43] "GET /news_list?cid=1&page=1 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:58:44] "GET /static/images/shutoff.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 15:58:52] "POST /passport/login HTTP/1.1" 404 -
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 16:02:37] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 16:02:37] "GET /images/person01.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 16:02:37] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 16:02:37] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 16:02:37] "GET /images/pic_code.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 16:02:37] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 16:02:37] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 16:02:37] "GET /news_list?cid=1&page=1 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 16:02:39] "GET /passport/image_code?imageCodeId=9c18da66-283d-4893-ab59-729a3184ab40 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 16:02:41] "GET /passport/image_code?imageCodeId=b0ed8b24-367b-4d10-865b-c0eeece0d1e7 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 19:58:17] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 19:58:17] "GET /static/css/reset.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 19:58:17] "GET /static/css/main.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 19:58:17] "GET /static/images/logo.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 19:58:17] "GET /images/person01.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 19:58:17] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 19:58:17] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 19:58:17] "GET /images/pic_code.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 19:58:17] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 19:58:17] "GET /static/images/hit_icon.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 19:58:17] "GET /static/images/clock.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 19:58:17] "GET /news_list?cid=1&page=1 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 19:58:20] "GET /passport/image_code?imageCodeId=a111ae28-98b0-4fbf-9d88-465cdf8817ad HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 19:58:20] "GET /static/images/shutoff.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 20:19:32] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 20:19:32] "GET /images/person01.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 20:19:32] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 20:19:32] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 20:19:32] "GET /images/pic_code.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 20:19:32] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 20:19:32] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 20:19:32] "GET /news_list?cid=1&page=1 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 20:19:34] "GET /passport/image_code?imageCodeId=6476b5fb-7c80-49b3-a971-839e5da0e3a2 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 20:19:35] "GET /passport/image_code?imageCodeId=3a4a7192-05bc-4857-bce2-19676676a103 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 20:19:37] "GET /passport/image_code?imageCodeId=54705b1c-4e1d-4f85-89ed-467d7228a3cf HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 20:19:38] "GET /passport/image_code?imageCodeId=211c67df-e89f-40aa-a9df-2c0eb98d1ad1 HTTP/1.1" 404 -
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 20:52:21] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 20:52:21] "GET /images/person01.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 20:52:21] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 20:52:21] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 20:52:21] "GET /images/pic_code.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 20:52:21] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 20:52:21] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 20:52:21] "GET /news_list?cid=1&page=1 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 20:52:24] "GET /passport/image_code?imageCodeId=bb87cda8-de07-4897-aa22-fe89ccae39a5 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 20:52:26] "GET /passport/image_code?imageCodeId=ba08e214-ba86-4f1a-8684-8f30eed7c818 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 20:52:26] "GET /passport/image_code?imageCodeId=8bc17a44-13af-444a-8e11-48b5421407fb HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 20:52:27] "GET /passport/image_code?imageCodeId=260b6429-4abb-428c-96ef-4053a5964f4f HTTP/1.1" 404 -
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 20:59:46] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 20:59:46] "GET /images/person01.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 20:59:46] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 20:59:46] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 20:59:46] "GET /passport/image_code?imageCodeId=imageCodeId HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 20:59:46] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 20:59:46] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 20:59:46] "GET /news_list?cid=1&page=1 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 20:59:48] "GET /passport/image_code?imageCodeId=8d046052-dcf3-4d5f-8026-1e08927d8e29 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 20:59:49] "GET /passport/image_code?imageCodeId=04be6179-321c-4d11-b958-7a54087a0345 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 20:59:50] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 20:59:50] "GET /images/person01.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 20:59:50] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 20:59:50] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 20:59:50] "GET /passport/image_code?imageCodeId=imageCodeId HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 20:59:50] "GET /news_list?cid=1&page=1 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 20:59:51] "GET /passport/image_code?imageCodeId=766e8e30-bbde-4c95-adfd-5bd6e03389b9 HTTP/1.1" 404 -
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:04:19] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:04:19] "GET /images/person01.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:04:19] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:04:19] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:04:20] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:04:20] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:04:20] "GET /news_list?cid=1&page=1 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:04:22] "GET /passport/image_code?imageCodeId=0f07563f-7e62-4a67-b8bc-5578aba8bffd HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:04:23] "GET /passport/image_code?imageCodeId=a19d3a31-9d8e-44f4-a454-556260059ca6 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:04:42] "GET /passport/image_code?imageCodeId=0ec6a9ef-67af-406a-8e56-0714965d2df6 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:07:30] "GET /favicon.ico HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:07:30] "GET /passport HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:07:42] "GET /index HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:07:59] "GET /passport/image_code?imageCodeId=368a54e7-78b6-4b3a-ab22-0eddcfeb435f HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:08:03] "GET /passport/image_code?imageCodeId=d6cdb5d3-95fa-4ca2-b23c-ee45274f99a8 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:08:04] "GET /passport/image_code?imageCodeId=846c7f9a-e9fd-4441-a984-5bef9a55d7e3 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:08:05] "GET /passport/image_code?imageCodeId=f93bb9e7-7a31-423c-969d-2a48525563e0 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:08:09] "GET /passport/image_code?imageCodeId=cac83a8c-08d6-4f9a-9d7e-893fb1cfb568 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:08:13] "GET /passport/image_code?imageCodeId=8763f03b-bae6-4989-b897-02c48c77e90f HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:08:14] "GET /passport/image_code?imageCodeId=a7982fcf-90cc-4f02-9bf9-901032845f08 HTTP/1.1" 404 -
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:11:01] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:11:01] "GET /images/person01.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:11:01] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:11:01] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:11:01] "GET /passport/image_code?imageCodeId=a7982fcf-90cc-4f02-9bf9-901032845f0 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:11:01] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:11:01] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:11:01] "GET /news_list?cid=1&page=1 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:11:03] "GET /passport/image_code?imageCodeId=b475719b-8056-4728-9b1e-767ef3881523 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:11:04] "GET /passport/image_code?imageCodeId=edf56eb5-230d-49ed-a778-861f704c107f HTTP/1.1" 404 -
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:13:58] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:13:58] "GET /images/person01.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:13:58] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:13:58] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:13:58] "GET /passport/image_code?imageCodeId=a7982fcf-90cc-4f02-9bf9-901032845f0 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:13:58] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:13:58] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:13:58] "GET /news_list?cid=1&page=1 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:14:00] "GET /passport/image_code?imageCodeId=29ab58ab-b1be-4974-98eb-d2d919483c32 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:14:01] "GET /passport/image_code?imageCodeId=1e8611a4-c62c-43a1-8ded-d1f3c781a01d HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:14:02] "GET /passport/image_code?imageCodeId=3a1bdce0-29a3-49bb-9bf3-ec764948ae0c HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:14:10] "GET /passport/image_code?imageCodeId=1ecc3fbb-a8fe-42e9-a3cb-9e90fbcd66e9 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:14:10] "GET /passport/image_code?imageCodeId=7de036fd-a8c6-4f85-97b7-b7ff29dc789d HTTP/1.1" 404 -
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:17:53] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:17:53] "GET /images/person01.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:17:53] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:17:53] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:17:53] "GET /passport/image_code?imageCodeId=a7982fcf-90cc-4f02-9bf9-901032845f0 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:17:53] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:17:53] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:17:53] "GET /news_list?cid=1&page=1 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:17:55] "GET /passport/image_code?imageCodeId=09184c00-9c8d-4778-8792-8648bb255335 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:17:57] "GET /passport/image_code?imageCodeId=23679349-af39-4921-b31d-95881e6501a0 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:17:57] "GET /passport/image_code?imageCodeId=f7ab44bc-924b-4c6b-8601-a5db526cd335 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:17:57] "GET /passport/image_code?imageCodeId=12504830-1339-4b3c-88e8-4e59b7d48c8d HTTP/1.1" 404 -
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:21:28] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:21:28] "GET /images/person01.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:21:28] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:21:28] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:21:28] "GET /passport/image_code?imageCodeId=a7982fcf-90cc-4f02-9bf9-901032845f0 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:21:28] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:21:28] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:21:28] "GET /news_list?cid=1&page=1 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:21:30] "GET /passport/image_code?imageCodeId=853e0848-8b4c-417f-93b6-866e0670a7f6 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:21:31] "GET /passport/image_code?imageCodeId=c762e54e-1868-4ed3-b244-f0f4938e3783 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:21:31] "GET /passport/image_code?imageCodeId=a7b86321-3a99-4644-9176-9f3b09bd67f8 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:21:32] "GET /passport/image_code?imageCodeId=82642c8c-50cf-46f0-8e5a-168b8d57f437 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:21:32] "GET /passport/image_code?imageCodeId=ef172f19-b945-475c-bd9e-d12ae836a961 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:21:32] "GET /passport/image_code?imageCodeId=e3312df8-c2c0-4074-8d23-a6302a299e0d HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:21:33] "GET /passport/image_code?imageCodeId=1f141aec-e117-40e7-aa87-a3d3b8e21ef3 HTTP/1.1" 404 -
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:22:24] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:22:24] "GET /images/person01.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:22:24] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:22:24] "GET /images/person.png HTTP/1.1" 404 -
+ERROR app.py:1761 Exception on /passport/image_code [GET]
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\info\modules\passport\views.py", line 13, in get_image_code
+    name,text,image =captcha.generate_captcha()
+AttributeError: module 'info.utils.captcha.captcha' has no attribute 'generate_captcha'
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:22:24] "GET /passport/image_code?imageCodeId=a7982fcf-90cc-4f02-9bf9-901032845f0 HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:22:24] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:22:24] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:22:24] "GET /news_list?cid=1&page=1 HTTP/1.1" 404 -
+ERROR app.py:1761 Exception on /passport/image_code [GET]
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\info\modules\passport\views.py", line 13, in get_image_code
+    name,text,image =captcha.generate_captcha()
+AttributeError: module 'info.utils.captcha.captcha' has no attribute 'generate_captcha'
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:22:26] "GET /passport/image_code?imageCodeId=1185d5d3-d66f-4a25-85bf-c1be113ea05a HTTP/1.1" 500 -
+ERROR app.py:1761 Exception on /passport/image_code [GET]
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\info\modules\passport\views.py", line 13, in get_image_code
+    name,text,image =captcha.generate_captcha()
+AttributeError: module 'info.utils.captcha.captcha' has no attribute 'generate_captcha'
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:22:27] "GET /passport/image_code?imageCodeId=9704ab21-f7fd-4d20-8bc9-b955de9af58b HTTP/1.1" 500 -
+ERROR app.py:1761 Exception on /passport/image_code [GET]
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\info\modules\passport\views.py", line 13, in get_image_code
+    name,text,image =captcha.generate_captcha()
+AttributeError: module 'info.utils.captcha.captcha' has no attribute 'generate_captcha'
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:22:28] "GET /passport/image_code?imageCodeId=24df6770-fdac-4d4e-8acf-3da8951d3b85 HTTP/1.1" 500 -
+ERROR app.py:1761 Exception on /passport/image_code [GET]
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\info\modules\passport\views.py", line 13, in get_image_code
+    name,text,image =captcha.generate_captcha()
+AttributeError: module 'info.utils.captcha.captcha' has no attribute 'generate_captcha'
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:23:36] "GET /passport/image_code?imageCodeId=5af43f66-ac6e-49a8-bb6e-ceb642e5700d HTTP/1.1" 500 -
+ERROR app.py:1761 Exception on /passport/image_code [GET]
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\info\modules\passport\views.py", line 13, in get_image_code
+    name,text,image =captcha.generate_captcha()
+AttributeError: module 'info.utils.captcha.captcha' has no attribute 'generate_captcha'
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:23:37] "GET /passport/image_code?imageCodeId=d907d7f5-1363-473b-b3d9-f57a0374d117 HTTP/1.1" 500 -
+ERROR app.py:1761 Exception on /passport/image_code [GET]
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\info\modules\passport\views.py", line 13, in get_image_code
+    name,text,image =captcha.generate_captcha()
+AttributeError: module 'info.utils.captcha.captcha' has no attribute 'generate_captcha'
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:23:37] "GET /passport/image_code?imageCodeId=28493665-2119-4d98-bfbb-332eddcb00e2 HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:25:26] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:25:26] "GET /images/person01.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:25:26] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:25:26] "GET /images/person.png HTTP/1.1" 404 -
+ERROR app.py:1761 Exception on /passport/image_code [GET]
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\info\modules\passport\views.py", line 13, in get_image_code
+    name,text,image =captcha.generate_captcha()
+AttributeError: module 'info.utils.captcha.captcha' has no attribute 'generate_captcha'
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:25:26] "GET /passport/image_code?imageCodeId=a7982fcf-90cc-4f02-9bf9-901032845f0 HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:25:26] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:25:26] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:25:26] "GET /news_list?cid=1&page=1 HTTP/1.1" 404 -
+ERROR app.py:1761 Exception on /passport/image_code [GET]
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\info\modules\passport\views.py", line 13, in get_image_code
+    name,text,image =captcha.generate_captcha()
+AttributeError: module 'info.utils.captcha.captcha' has no attribute 'generate_captcha'
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:25:29] "GET /passport/image_code?imageCodeId=3696d575-ccde-4bed-a01b-d713d229f45f HTTP/1.1" 500 -
+ERROR app.py:1761 Exception on /passport/image_code [GET]
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\info\modules\passport\views.py", line 13, in get_image_code
+    name,text,image =captcha.generate_captcha()
+AttributeError: module 'info.utils.captcha.captcha' has no attribute 'generate_captcha'
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:25:30] "GET /passport/image_code?imageCodeId=9f7dea16-746e-4483-99bc-80639a0f1c79 HTTP/1.1" 500 -
+ERROR app.py:1761 Exception on /passport/image_code [GET]
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\info\modules\passport\views.py", line 13, in get_image_code
+    name,text,image =captcha.generate_captcha()
+AttributeError: module 'info.utils.captcha.captcha' has no attribute 'generate_captcha'
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:25:30] "GET /passport/image_code?imageCodeId=47e54f45-2d63-4a98-b9e6-45cc4490011b HTTP/1.1" 500 -
+ERROR app.py:1761 Exception on /passport/image_code [GET]
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\info\modules\passport\views.py", line 13, in get_image_code
+    name,text,image =captcha.generate_captcha()
+AttributeError: module 'info.utils.captcha.captcha' has no attribute 'generate_captcha'
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:25:30] "GET /passport/image_code?imageCodeId=88cea73c-e5ed-4463-b0ae-3ae11b879d7b HTTP/1.1" 500 -
+ERROR app.py:1761 Exception on /passport/image_code [GET]
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\info\modules\passport\views.py", line 13, in get_image_code
+    name,text,image =captcha.generate_captcha()
+AttributeError: module 'info.utils.captcha.captcha' has no attribute 'generate_captcha'
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:25:31] "GET /passport/image_code?imageCodeId=69ad34c5-a9c6-4c36-aa5b-24a9bfa8be36 HTTP/1.1" 500 -
+ERROR app.py:1761 Exception on /passport/image_code [GET]
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\info\modules\passport\views.py", line 13, in get_image_code
+    name,text,image =captcha.generate_captcha()
+AttributeError: module 'info.utils.captcha.captcha' has no attribute 'generate_captcha'
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:25:31] "GET /passport/image_code?imageCodeId=f95f2d1b-5a4d-4d35-995e-28bea0f66154 HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:25:39] "GET /favicon.ico HTTP/1.1" 404 -
+ERROR app.py:1761 Exception on /passport/image_code [GET]
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\info\modules\passport\views.py", line 13, in get_image_code
+    name,text,image =captcha.generate_captcha()
+AttributeError: module 'info.utils.captcha.captcha' has no attribute 'generate_captcha'
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:25:40] "GET /passport/image_code?imageCodeId=f95f2d1b-5a4d-4d35-995e-28bea0f66154 HTTP/1.1" 500 -
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:29:10] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:29:10] "GET /images/person01.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:29:10] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:29:10] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:29:10] "GET /passport/image_code?imageCodeId=a7982fcf-90cc-4f02-9bf9-901032845f0 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:29:10] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:29:10] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:29:10] "GET /news_list?cid=1&page=1 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:29:11] "GET /passport/image_code?imageCodeId=9a783cde-f99a-43cc-97aa-c87d923bdda4 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:29:13] "GET /passport/image_code?imageCodeId=3cf5bd05-9beb-4282-9ea1-ffd6323118ff HTTP/1.1" 404 -
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:30:33] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:30:33] "GET /images/person01.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:30:33] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:30:33] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:30:33] "GET /passport/image_code?imageCodeId=a7982fcf-90cc-4f02-9bf9-901032845f0 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:30:33] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:30:33] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:30:33] "GET /news_list?cid=1&page=1 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:30:35] "GET /passport/image_code?imageCodeId=44be1dc5-0f4c-4c57-bf56-b33cbd017490 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:30:36] "GET /passport/image_code?imageCodeId=bd76d51c-562c-44cd-82ca-d107decd2894 HTTP/1.1" 404 -
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:31:06] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:31:06] "GET /images/person01.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:31:06] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:31:06] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:31:06] "GET /passport/image_code?imageCodeId=a7982fcf-90cc-4f02-9bf9-901032845f0 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:31:06] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:31:06] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:31:06] "GET /news_list?cid=1&page=1 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:31:08] "GET /passport/image_code?imageCodeId=ddf352dd-5143-4a56-85d2-d79686cfa555 HTTP/1.1" 404 -
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:31:47] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:31:47] "GET /images/person01.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:31:47] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:31:47] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:31:47] "GET /passport/image_code?imageCodeId=a7982fcf-90cc-4f02-9bf9-901032845f0 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:31:47] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:31:47] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:31:47] "GET /news_list?cid=1&page=1 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:31:48] "GET /passport/image_code?imageCodeId=434d7829-c256-4466-9585-76a278ac70c6 HTTP/1.1" 404 -
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:33:03] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:33:03] "GET /images/person01.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:33:03] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:33:03] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:33:03] "GET /passport/image_code?imageCodeId=a7982fcf-90cc-4f02-9bf9-901032845f0 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:33:03] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:33:03] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:33:03] "GET /news_list?cid=1&page=1 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:33:04] "GET /passport/image_code?imageCodeId=8cb2981f-2255-4687-a097-de4795055e04 HTTP/1.1" 404 -
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:42:21] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:42:21] "GET /images/person01.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:42:21] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:42:21] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:42:21] "GET /passport/image_code?imageCodeId=a7982fcf-90cc-4f02-9bf9-901032845f0 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:42:21] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:42:21] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:42:22] "GET /news_list?cid=1&page=1 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:42:23] "GET /passport/image_code?imageCodeId=5bd8b3e0-1a38-405f-b388-5fc8f55dee2b HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:42:23] "GET /passport/image_code?imageCodeId=ddbc4914-3660-4fd1-85dd-c2cd76e02b1f HTTP/1.1" 404 -
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:50:04] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:50:04] "GET /images/person01.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:50:04] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:50:04] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:50:04] "GET /passport/image_code?imageCodeId=a7982fcf-90cc-4f02-9bf9-901032845f0 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:50:04] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:50:05] "GET /news_list?cid=1&page=1 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:50:57] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:50:57] "GET /images/person01.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:50:57] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:50:58] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:50:58] "GET /passport/image_code?imageCodeId=a7982fcf-90cc-4f02-9bf9-901032845f0 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:50:58] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:50:58] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:50:58] "GET /news_list?cid=1&page=1 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:50:59] "GET /passport/image_code?imageCodeId=5c413f73-9c18-4c7f-8d99-339d14ebbd1d HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:51:00] "GET /passport/image_code?imageCodeId=11fc8fe3-29ed-4d15-9035-12d7abc920a5 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:51:02] "GET /passport/image_code?imageCodeId=700e3606-176e-497d-9831-55c69b245050 HTTP/1.1" 404 -
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:52:04] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:52:04] "GET /images/person01.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:52:04] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:52:04] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:52:04] "GET /passport/image_code?imageCodeId=a7982fcf-90cc-4f02-9bf9-901032845f0 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:52:04] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:52:04] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:52:04] "GET /news_list?cid=1&page=1 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:52:05] "GET /passport/image_code?imageCodeId=42c24a62-a1c3-41b0-8ec9-b40b1da885ae HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:52:06] "GET /passport/image_code?imageCodeId=d0064414-bd7a-4066-bca6-b407e284fea9 HTTP/1.1" 404 -
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:54:23] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:54:23] "GET /images/person01.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:54:23] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:54:23] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:54:23] "GET /passport/image_code?imageCodeId=a7982fcf-90cc-4f02-9bf9-901032845f0 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:54:23] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:54:23] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:54:23] "GET /news_list?cid=1&page=1 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:54:25] "GET /passport/image_code?imageCodeId=dce7e7b4-c2e3-4131-8478-ccbf57e4f8ee HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:54:26] "GET /passport/image_code?imageCodeId=5ac1b8a3-e586-4aae-8da6-c6dcb2d2a883 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:55:03] "GET /passport/image_code?imageCodeId=dce7e7b4-c2e3-4131-8478-ccbf57e4f8ee HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:55:25] "GET /passport/image_code?imageCodeId=76b0c2b3-597d-4fce-971a-3ae91a99594c HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:55:29] "GET /passport/image_code?imageCodeId=8291c181-b27f-494e-88a8-54923c70572e HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:55:32] "GET /passport/image_code?imageCodeId=a5193f2f-b2b5-49dd-b9f0-36e4e9295bd5 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:55:32] "GET /passport/image_code?imageCodeId=0f7a5c1d-00a6-4c57-82c0-11cb33495897 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:55:34] "GET /passport/image_code?imageCodeId=5b9b5ccf-2660-4498-a5d5-1a78e341d554 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:55:34] "GET /passport/image_code?imageCodeId=e015b3f0-2eb3-4ac5-824a-058c8071f000 HTTP/1.1" 404 -
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:57:06] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:57:06] "GET /images/person01.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:57:06] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:57:06] "GET /passport/image_code?imageCodeId=a7982fcf-90cc-4f02-9bf9-901032845f0 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:57:06] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:57:06] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:57:07] "GET /news_list?cid=1&page=1 HTTP/1.1" 404 -
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:58:01] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:58:06] "GET /favicon.ico HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:58:06] "GET /index HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:58:06] "GET /images/person01.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:58:06] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:58:06] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:58:06] "GET /passport/image_code?imageCodeId=a7982fcf-90cc-4f02-9bf9-901032845f0 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:58:06] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:58:06] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 21:58:06] "GET /news_list?cid=1&page=1 HTTP/1.1" 404 -
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 22:00:13] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 22:00:19] "GET /index HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 22:00:19] "GET /images/person01.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 22:00:19] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 22:00:19] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 22:00:19] "GET /image_code?imageCodeId=a7982fcf-90cc-4f02-9bf9-901032845f0 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 22:00:19] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 22:00:19] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 22:00:19] "GET /news_list?cid=1&page=1 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 22:00:21] "GET /passport/image_code?imageCodeId=10f5a01a-aadd-4680-8931-a4ab8915069b HTTP/1.1" 404 -
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 22:01:21] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 22:01:25] "GET /index HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 22:01:25] "GET /images/person01.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 22:01:25] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 22:01:25] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 22:01:25] "GET /image_code?imageCodeId=a7982fcf-90cc-4f02-9bf9-901032845f0 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 22:01:25] "GET /news_list?cid=1&page=1 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 22:01:27] "GET /passport/image_code?imageCodeId=8765f00c-c960-4729-b64a-f9875480e79a HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 22:01:28] "GET /passport/image_code?imageCodeId=e57af760-f16c-4d38-a56c-8203db12c982 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 22:01:42] "GET /passport/image_code?imageCodeId=c99d8fa0-4d3f-49d7-98cb-e79e43f35feb HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 22:01:48] "GET /passport/image_code?imageCodeId=7b41f284-d73a-4825-a8f9-94bb0762c163 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 22:01:49] "GET /passport/image_code?imageCodeId=3a4678eb-5035-46f1-ae44-4cdb9966c6c2 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 22:01:50] "GET /passport/image_code?imageCodeId=0863e0e2-be01-43e5-857a-195252d32249 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 22:01:50] "GET /passport/image_code?imageCodeId=96f2a469-5d15-4d19-80d7-0c4fb7de597e HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 22:01:51] "GET /passport/image_code?imageCodeId=4558aada-c7f5-4069-9fd2-6b4586fbd378 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 22:01:52] "GET /passport/image_code?imageCodeId=b4f03c25-9372-4285-8576-9c3b11491129 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 22:01:52] "GET /passport/image_code?imageCodeId=2b9c3b23-5068-4f6e-a9e3-db073cbb61a0 HTTP/1.1" 404 -
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 22:03:07] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 22:03:08] "GET /favicon.ico HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 22:03:11] "GET /favicon.ico HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 22:03:12] "GET /index HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 22:03:12] "GET /images/person01.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 22:03:12] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 22:03:12] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 22:03:12] "GET /image_code?imageCodeId=a7982fcf-90cc-4f02-9bf9-901032845f0 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 22:03:12] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 22:03:12] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 22:03:12] "GET /news_list?cid=1&page=1 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 22:03:14] "GET /passport/image_code?imageCodeId=bc403f75-3fae-4afa-8c53-3ecc4016771b HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 22:03:15] "GET /passport/image_code?imageCodeId=0f4ae8b3-fe6c-4ef3-8dc4-5568a20856c6 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 22:03:17] "GET /passport/image_code?imageCodeId=0f4ae8b3-fe6c-4ef3-8dc4-5568a20856c6 HTTP/1.1" 404 -
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 22:04:50] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 22:05:04] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 22:05:04] "GET /images/person01.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 22:05:04] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 22:05:04] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 22:05:05] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 22:05:05] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 22:05:05] "GET /news_list?cid=1&page=1 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 22:05:06] "GET /passport/image_code?imageCodeId=6b4ba2c4-5117-41ba-be67-f7758acd2f64 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 22:05:14] "GET /passport/image_code?imageCodeId=56d4fe76-09e8-47b2-a637-995f22eee257 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 22:05:24] "GET /passport/image_code?imageCodeId=573a2d14-f192-4a72-87df-5c894f0c0e42 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 22:05:26] "GET /passport/image_code?imageCodeId=d8a3bbd0-974b-47d0-abd6-1d88913a96ca HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 22:05:26] "GET /passport/image_code?imageCodeId=a25f415a-01a9-4dca-ba85-f6737097f0a0 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 22:05:27] "GET /passport/image_code?imageCodeId=55b038a7-a64f-4b24-8080-ba9ac2b2aac6 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 22:05:27] "GET /passport/image_code?imageCodeId=c6945e66-576a-4d8f-b039-0c8749cb37cf HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 22:05:28] "GET /passport/image_code?imageCodeId=f311cebc-8443-4dac-b76c-9ea6ebabf09e HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 22:05:28] "GET /passport/image_code?imageCodeId=bbdf8569-c82a-4b5a-8994-a7e728b4cc0e HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 22:05:28] "GET /passport/image_code?imageCodeId=bc929346-e907-4e80-9d09-c9fc11f4ff8d HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 22:05:29] "GET /passport/image_code?imageCodeId=b20d981d-d607-418c-929a-a891054dd180 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 22:05:32] "GET /passport/image_code?imageCodeId=42c36f12-1724-4b5a-b081-183920e5eee3 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 22:05:32] "GET /passport/image_code?imageCodeId=d2dd5a2d-a584-493c-ba15-6d3253f24d39 HTTP/1.1" 200 -
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 22:05:56] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 22:05:56] "GET /images/person01.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 22:05:56] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 22:05:56] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 22:05:56] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 22:05:56] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 22:05:56] "GET /news_list?cid=1&page=1 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 22:05:58] "GET /passport/image_code?imageCodeId=5261f34c-2756-4bda-834f-c81e7502b8d6 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 22:06:24] "GET /favicon.ico HTTP/1.1" 404 -
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 22:07:57] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 22:07:57] "GET /images/person01.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 22:07:57] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 22:07:57] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 22:07:57] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 22:07:57] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 22:07:57] "GET /news_list?cid=1&page=1 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [17/Mar/2019 22:07:59] "GET /passport/image_code?imageCodeId=b96bc7db-ca9d-4c31-aa0e-ecf7d1867a81 HTTP/1.1" 200 -
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR app.py:1761 Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\redis\connection.py", line 492, in connect
+    sock = self._connect()
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\redis\connection.py", line 550, in _connect
+    raise err
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\redis\connection.py", line 538, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 1816, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 1833, in finalize_request
+    response = self.process_response(response)
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 2114, in process_response
+    self.session_interface.save_session(self, ctx.session, response)
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask_session\sessions.py", line 166, in save_session
+    time=total_seconds(app.permanent_session_lifetime))
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\redis\client.py", line 1472, in setex
+    return self.execute_command('SETEX', name, time, value)
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\redis\client.py", line 772, in execute_command
+    connection = pool.get_connection(command_name, **options)
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\redis\connection.py", line 994, in get_connection
+    connection.connect()
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\redis\connection.py", line 497, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to 127.0.0.1:6379. 由于目标计算机积极拒绝，无法连接。.
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 21:31:14] "GET / HTTP/1.1" 500 -
+ERROR app.py:1761 Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\redis\connection.py", line 492, in connect
+    sock = self._connect()
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\redis\connection.py", line 550, in _connect
+    raise err
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\redis\connection.py", line 538, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 1816, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 1833, in finalize_request
+    response = self.process_response(response)
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 2114, in process_response
+    self.session_interface.save_session(self, ctx.session, response)
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask_session\sessions.py", line 166, in save_session
+    time=total_seconds(app.permanent_session_lifetime))
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\redis\client.py", line 1472, in setex
+    return self.execute_command('SETEX', name, time, value)
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\redis\client.py", line 772, in execute_command
+    connection = pool.get_connection(command_name, **options)
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\redis\connection.py", line 994, in get_connection
+    connection.connect()
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\redis\connection.py", line 497, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to 127.0.0.1:6379. 由于目标计算机积极拒绝，无法连接。.
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 21:31:15] "GET /favicon.ico HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 21:31:26] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 21:31:26] "GET /static/css/reset.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 21:31:26] "GET /static/js/jquery-1.12.4.min.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 21:31:26] "GET /static/js/index.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 21:31:26] "GET /static/css/main.css HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 21:31:26] "GET /static/js/main.js HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 21:31:26] "GET /static/images/logo.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 21:31:26] "GET /images/person01.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 21:31:26] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 21:31:26] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 21:31:26] "GET /static/images/hit_icon.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 21:31:26] "GET /static/images/clock.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 21:31:26] "GET /news_list?cid=1&page=1 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 21:31:26] "GET /favicon.ico HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 21:31:28] "GET /static/images/shutoff.png HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 21:31:28] "GET /passport/image_code?imageCodeId=424ce7e6-7858-4dba-b380-d5dc91a47363 HTTP/1.1" 200 -
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 22:14:46] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 22:14:46] "GET /images/person01.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 22:14:46] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 22:14:46] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 22:14:46] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 22:14:46] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 22:14:46] "GET /news_list?cid=1&page=1 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 22:14:48] "GET /passport/image_code?imageCodeId=059219b9-6001-4c90-8654-5d8a69a460ca HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 22:15:24] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 22:15:24] "GET /images/person01.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 22:15:24] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 22:15:24] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 22:15:25] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 22:15:25] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 22:15:25] "GET /news_list?cid=1&page=1 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 22:15:26] "GET /passport/image_code?imageCodeId=70222852-d5f8-4582-9bc5-843d0971eaae HTTP/1.1" 404 -
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 22:17:01] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 22:17:01] "GET /images/person01.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 22:17:01] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 22:17:01] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 22:17:02] "GET /news_list?cid=1&page=1 HTTP/1.1" 404 -
+DEBUG views.py:255 图片验证码内容是：ZSEO
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 22:17:03] "GET /passport/image_code?imageCodeId=c220c408-52d1-480b-a82e-09501c49c86a HTTP/1.1" 200 -
+INFO csrf.py:251 The CSRF token is missing.
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 22:17:15] "POST /passport/sms_code HTTP/1.1" 400 -
+DEBUG views.py:255 图片验证码内容是：DUUP
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 22:17:41] "GET /passport/image_code?imageCodeId=451afa3f-2768-47d7-8b95-07425075c683 HTTP/1.1" 200 -
+DEBUG views.py:255 图片验证码内容是：VG8X
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 22:19:11] "GET /passport/image_code?imageCodeId=706e690b-ac11-4105-a51a-9bd3a39cb9ec HTTP/1.1" 200 -
+DEBUG views.py:255 图片验证码内容是：WFOG
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 22:19:45] "GET /passport/image_code?imageCodeId=a38342ba-d8f6-4d4f-9447-d1ba9ddb8fe5 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 22:25:51] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 22:25:51] "GET /images/person01.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 22:25:51] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 22:25:51] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 22:25:51] "GET /news_list?cid=1&page=1 HTTP/1.1" 404 -
+DEBUG views.py:255 图片验证码内容是：WOYQ
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 22:25:59] "GET /passport/image_code?imageCodeId=29755ba1-43ad-4d9b-aa29-e8a99d838fd0 HTTP/1.1" 200 -
+INFO csrf.py:251 The CSRF token is missing.
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 22:26:15] "POST /passport/sms_code HTTP/1.1" 400 -
+DEBUG views.py:255 图片验证码内容是：7C4D
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 22:29:52] "GET /passport/image_code?imageCodeId=df150b81-260e-4459-96a2-7307f6721c57 HTTP/1.1" 200 -
+DEBUG views.py:255 图片验证码内容是：ZFUS
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 22:30:01] "GET /passport/image_code?imageCodeId=be3d6550-8f52-41d5-bf6f-dd90c53a39f1 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 22:30:03] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 22:30:03] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 22:30:03] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 22:30:03] "GET /images/person01.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 22:30:03] "GET /news_list?cid=1&page=1 HTTP/1.1" 404 -
+DEBUG views.py:255 图片验证码内容是：WTMX
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 22:30:05] "GET /passport/image_code?imageCodeId=c6fe7038-c6f5-4221-9ac3-415dc80aad5a HTTP/1.1" 200 -
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 22:32:48] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 22:32:48] "GET /images/person01.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 22:32:48] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 22:32:48] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 22:32:48] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 22:32:48] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 22:32:48] "GET /news_list?cid=1&page=1 HTTP/1.1" 404 -
+DEBUG views.py:255 图片验证码内容是：LU56
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 22:32:50] "GET /passport/image_code?imageCodeId=ecfb5324-401a-447e-9045-f4ce76d6d88e HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 22:32:54] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 22:32:54] "GET /images/person01.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 22:32:54] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 22:32:54] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 22:32:54] "GET /news_list?cid=1&page=1 HTTP/1.1" 404 -
+DEBUG views.py:255 图片验证码内容是：QPGA
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 22:32:55] "GET /passport/image_code?imageCodeId=16b6a8f8-4329-454a-b8be-250d4841c1ef HTTP/1.1" 200 -
+INFO csrf.py:251 The CSRF token is missing.
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 22:33:09] "POST /passport/sms_code HTTP/1.1" 400 -
+INFO csrf.py:251 The CSRF token is missing.
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 22:33:29] "POST /passport/register HTTP/1.1" 400 -
+INFO csrf.py:251 The CSRF token is missing.
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 22:33:32] "POST /passport/register HTTP/1.1" 400 -
+INFO csrf.py:251 The CSRF token is missing.
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 22:33:33] "POST /passport/register HTTP/1.1" 400 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 22:33:36] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 22:33:36] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 22:33:36] "GET /images/person01.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 22:33:36] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 22:33:36] "GET /news_list?cid=1&page=1 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 22:33:58] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 22:33:58] "GET /images/person01.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 22:33:58] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 22:33:58] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 22:33:59] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 22:33:59] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 22:33:59] "GET /news_list?cid=1&page=1 HTTP/1.1" 404 -
+DEBUG views.py:255 图片验证码内容是：B8LT
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 22:34:02] "GET /passport/image_code?imageCodeId=59ab982c-4ccd-48fd-acd4-dec0ac91857c HTTP/1.1" 200 -
+INFO csrf.py:251 The CSRF token is missing.
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 22:34:31] "POST /passport/sms_code HTTP/1.1" 400 -
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 23:15:01] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 23:15:02] "GET /images/person01.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 23:15:02] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 23:15:02] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 23:15:02] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 23:15:02] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 23:15:02] "GET /news_list?cid=1&page=1 HTTP/1.1" 404 -
+DEBUG views.py:255 图片验证码内容是：IRGT
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 23:15:05] "GET /passport/image_code?imageCodeId=26dd3b10-9072-4d17-92ca-568466c2223b HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 23:15:25] "POST /passport/sms_code HTTP/1.1" 200 -
+DEBUG views.py:255 图片验证码内容是：OMKH
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 23:15:41] "GET /passport/image_code?imageCodeId=820d8f57-38fb-4802-9b9a-32238466ec3c HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 23:16:01] "POST /passport/sms_code HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 23:16:10] "POST /passport/sms_code HTTP/1.1" 200 -
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 23:17:25] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 23:17:25] "GET /images/person01.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 23:17:25] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 23:17:25] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 23:17:25] "GET /news_list?cid=1&page=1 HTTP/1.1" 404 -
+DEBUG views.py:255 图片验证码内容是：M6GU
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 23:17:26] "GET /passport/image_code?imageCodeId=e541e81e-0322-4867-9327-971ae59d6c08 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 23:17:43] "POST /passport/sms_code HTTP/1.1" 200 -
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 23:19:08] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 23:19:08] "GET /images/person01.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 23:19:08] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 23:19:08] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 23:19:08] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 23:19:08] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 23:19:08] "GET /news_list?cid=1&page=1 HTTP/1.1" 404 -
+DEBUG views.py:255 图片验证码内容是：V3UL
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 23:19:09] "GET /passport/image_code?imageCodeId=37f8c733-4764-48b8-b31a-33f7a3289aeb HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 23:19:23] "POST /passport/sms_code HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 23:19:31] "POST /passport/sms_code HTTP/1.1" 200 -
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 23:22:23] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 23:22:23] "GET /images/person01.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 23:22:23] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 23:22:23] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 23:22:23] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 23:22:23] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 23:22:23] "GET /news_list?cid=1&page=1 HTTP/1.1" 404 -
+DEBUG views.py:255 图片验证码内容是：BJBF
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 23:22:24] "GET /passport/image_code?imageCodeId=8dcfe176-8542-4f66-97d9-cfa100b963e9 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 23:22:31] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 23:22:31] "GET /images/person01.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 23:22:31] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 23:22:31] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 23:22:31] "GET /news_list?cid=1&page=1 HTTP/1.1" 404 -
+DEBUG views.py:255 图片验证码内容是：FGET
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 23:22:31] "GET /passport/image_code?imageCodeId=eb39ba09-a2ec-4744-93cb-307b447350d2 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 23:22:44] "POST /passport/sms_code HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 23:23:22] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 23:23:22] "GET /images/person01.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 23:23:22] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 23:23:22] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 23:23:22] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 23:23:22] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 23:23:22] "GET /news_list?cid=1&page=1 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 23:23:23] "GET /news_list?cid=5&page=1 HTTP/1.1" 404 -
+DEBUG views.py:255 图片验证码内容是：HURR
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 23:23:24] "GET /passport/image_code?imageCodeId=439f7069-c7e3-46d6-9850-a7177eee7878 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 23:23:32] "POST /passport/sms_code HTTP/1.1" 200 -
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 23:24:50] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 23:24:50] "GET /images/person01.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 23:24:50] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 23:24:50] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 23:24:50] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 23:24:50] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 23:24:51] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 23:24:51] "GET /news_list?cid=1&page=1 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 23:24:51] "GET /images/person01.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 23:24:51] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 23:24:51] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 23:24:51] "GET /news_list?cid=1&page=1 HTTP/1.1" 404 -
+DEBUG views.py:255 图片验证码内容是：GVL9
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 23:24:52] "GET /passport/image_code?imageCodeId=6bced954-5bfc-4e57-8202-d6fd22b32312 HTTP/1.1" 200 -
+DEBUG views.py:216 短信验证码内容是：196285
+INFO _internal.py:88 127.0.0.1 - - [18/Mar/2019 23:25:03] "POST /passport/sms_code HTTP/1.1" 200 -
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 21:45:44] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 21:45:44] "GET /static/css/reset.css HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 21:45:44] "GET /static/js/jquery-1.12.4.min.js HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 21:45:44] "GET /static/js/main.js HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 21:45:44] "GET /static/css/main.css HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 21:45:44] "GET /static/js/index.js HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 21:45:44] "GET /static/images/logo.png HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 21:45:44] "GET /images/person01.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 21:45:44] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 21:45:44] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 21:45:45] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 21:45:45] "GET /static/images/hit_icon.png HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 21:45:45] "GET /static/images/clock.png HTTP/1.1" 304 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 21:45:45] "GET /news_list?cid=1&page=1 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 21:45:45] "GET /favicon.ico HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 21:45:47] "GET /static/images/shutoff.png HTTP/1.1" 304 -
+DEBUG views.py:255 图片验证码内容是：EQCL
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 21:45:47] "GET /passport/image_code?imageCodeId=fcbd021f-89d0-4d4e-a114-cca25a1e2906 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 21:46:06] "POST /passport/sms_code HTTP/1.1" 200 -
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 21:47:23] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 21:47:23] "GET /images/person01.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 21:47:23] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 21:47:23] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 21:47:23] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 21:47:23] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 21:47:24] "GET /news_list?cid=1&page=1 HTTP/1.1" 404 -
+DEBUG views.py:255 图片验证码内容是：KLFA
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 21:47:25] "GET /passport/image_code?imageCodeId=8f1842c3-fd44-4296-8594-d46ef2e93ba2 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 21:47:35] "POST /passport/sms_code HTTP/1.1" 200 -
+DEBUG views.py:255 图片验证码内容是：7HIJ
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 21:49:24] "GET /passport/image_code?imageCodeId=84abded6-44a3-409f-bfd4-43dec4eb9d8b HTTP/1.1" 200 -
+DEBUG views.py:255 图片验证码内容是：IIHE
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 21:49:50] "GET /passport/image_code?imageCodeId=ccd4ba81-2130-40eb-9a87-c7ca38bf755b HTTP/1.1" 200 -
+DEBUG views.py:255 图片验证码内容是：DU4B
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 21:49:51] "GET /passport/image_code?imageCodeId=ead88795-1436-4193-9bf4-936831805652 HTTP/1.1" 200 -
+DEBUG views.py:255 图片验证码内容是：JNCW
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 21:50:59] "GET /passport/image_code?imageCodeId=cdedb2c0-37ed-44fc-88f8-744756b60ecb HTTP/1.1" 200 -
+DEBUG views.py:255 图片验证码内容是：SJSV
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 21:50:59] "GET /passport/image_code?imageCodeId=381c8975-6f51-4188-9028-ce5c9b4a51cb HTTP/1.1" 200 -
+DEBUG views.py:255 图片验证码内容是：DZCR
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 21:51:00] "GET /passport/image_code?imageCodeId=5966cd9e-8325-4af4-88a4-94d3c4b7cd52 HTTP/1.1" 200 -
+DEBUG views.py:255 图片验证码内容是：8MYL
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 21:51:03] "GET /passport/image_code?imageCodeId=971b8543-44c2-4376-9caf-bcec520d3ce6 HTTP/1.1" 200 -
+DEBUG views.py:255 图片验证码内容是：RPIU
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 21:51:03] "GET /passport/image_code?imageCodeId=922acb5f-6249-4dbc-9cf9-8e756346490e HTTP/1.1" 200 -
+DEBUG views.py:255 图片验证码内容是：FESZ
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 21:51:04] "GET /passport/image_code?imageCodeId=b0ba11eb-bc93-42a2-97e6-7847d82d8358 HTTP/1.1" 200 -
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:01:03] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:01:03] "GET /images/person01.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:01:03] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:01:03] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:01:04] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:01:04] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:01:04] "GET /news_list?cid=1&page=1 HTTP/1.1" 404 -
+DEBUG views.py:254 图片验证码内容是：RMTV
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:01:05] "GET /passport/image_code?imageCodeId=98ed6d62-abdc-43d1-8751-668ac49b5607 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:01:12] "POST /passport/sms_code HTTP/1.1" 200 -
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:02:40] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:02:40] "GET /images/person01.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:02:40] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:02:40] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:02:40] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:02:40] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:02:41] "GET /news_list?cid=1&page=1 HTTP/1.1" 404 -
+DEBUG views.py:255 图片验证码内容是：X5OM
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:02:42] "GET /passport/image_code?imageCodeId=1de6b3b6-d3c0-4024-9130-85c923702320 HTTP/1.1" 200 -
+DEBUG views.py:255 图片验证码内容是：CTOJ
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:02:49] "GET /passport/image_code?imageCodeId=c939af98-337e-4516-9c73-266b2f9dbcd9 HTTP/1.1" 200 -
+DEBUG views.py:255 图片验证码内容是：DAHS
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:02:50] "GET /passport/image_code?imageCodeId=51d97635-8886-4ac6-95ed-5d1e047cb9f6 HTTP/1.1" 200 -
+DEBUG views.py:255 图片验证码内容是：A8GI
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:02:52] "GET /passport/image_code?imageCodeId=14533e9f-9eb2-45d6-9976-5ed6dbdd0ad3 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:03:02] "POST /passport/sms_code HTTP/1.1" 200 -
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:06:23] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:06:23] "GET /images/person01.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:06:23] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:06:23] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:06:24] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:06:24] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:06:24] "GET /news_list?cid=1&page=1 HTTP/1.1" 404 -
+DEBUG views.py:255 图片验证码内容是：POEN
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:06:25] "GET /passport/image_code?imageCodeId=abf76374-b6b9-4f55-b7a1-43fc58fe2e8b HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:08:33] "POST /passport/sms_code HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:08:44] "POST /passport/sms_code HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:08:48] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:08:48] "GET /images/person01.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:08:48] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:08:48] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:08:48] "GET /news_list?cid=1&page=1 HTTP/1.1" 404 -
+DEBUG views.py:255 图片验证码内容是：3H5Y
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:08:49] "GET /passport/image_code?imageCodeId=7cd0807b-88ee-435e-a34c-7513047ee8a5 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:09:07] "POST /passport/sms_code HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:09:13] "POST /passport/sms_code HTTP/1.1" 200 -
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR app.py:1761 Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\redis\connection.py", line 492, in connect
+    sock = self._connect()
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\redis\connection.py", line 550, in _connect
+    raise err
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\redis\connection.py", line 538, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 2291, in wsgi_app
+    ctx.push()
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\ctx.py", line 377, in push
+    self.app, self.request
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask_session\sessions.py", line 132, in open_session
+    val = self.redis.get(self.key_prefix + sid)
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\redis\client.py", line 1264, in get
+    return self.execute_command('GET', name)
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\redis\client.py", line 772, in execute_command
+    connection = pool.get_connection(command_name, **options)
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\redis\connection.py", line 994, in get_connection
+    connection.connect()
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\redis\connection.py", line 497, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to 127.0.0.1:6379. 由于目标计算机积极拒绝，无法连接。.
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:15:44] "GET / HTTP/1.1" 500 -
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:15:59] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:15:59] "GET /images/person01.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:15:59] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:15:59] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:15:59] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:15:59] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:15:59] "GET /news_list?cid=1&page=1 HTTP/1.1" 404 -
+DEBUG views.py:255 图片验证码内容是：YJUX
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:16:01] "GET /passport/image_code?imageCodeId=eb0f3ecc-c558-4497-bf68-ab6e10e8ed5a HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:16:09] "POST /passport/sms_code HTTP/1.1" 200 -
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:16:55] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:16:55] "GET /images/person01.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:16:55] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:16:55] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:16:55] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:16:55] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:16:56] "GET /news_list?cid=1&page=1 HTTP/1.1" 404 -
+DEBUG views.py:255 图片验证码内容是：UWC6
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:16:57] "GET /passport/image_code?imageCodeId=777cc8ca-108e-4f51-b514-168363f4c257 HTTP/1.1" 200 -
+DEBUG views.py:216 短信验证码内容是：637596
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:17:12] "POST /passport/sms_code HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:17:27] "POST /passport/register HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:17:36] "POST /passport/register HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:18:50] "POST /passport/register HTTP/1.1" 200 -
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:20:42] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:20:42] "GET /images/person01.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:20:42] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:20:42] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:20:42] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:20:42] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:20:42] "GET /news_list?cid=1&page=1 HTTP/1.1" 404 -
+DEBUG views.py:255 图片验证码内容是：FLKM
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:20:44] "GET /passport/image_code?imageCodeId=be8b0bae-a2cb-4549-a4f8-7839b2ead011 HTTP/1.1" 200 -
+DEBUG views.py:216 短信验证码内容是：179686
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:20:53] "POST /passport/sms_code HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:21:09] "POST /passport/register HTTP/1.1" 200 -
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:22:44] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:22:44] "GET /images/person01.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:22:44] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:22:44] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:22:44] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:22:44] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:22:44] "GET /news_list?cid=1&page=1 HTTP/1.1" 404 -
+DEBUG views.py:256 图片验证码内容是：C37R
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:22:46] "GET /passport/image_code?imageCodeId=6ca4e133-6780-4b5e-bf14-f267539e9949 HTTP/1.1" 200 -
+DEBUG views.py:217 短信验证码内容是：280821
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:22:54] "POST /passport/sms_code HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:23:04] "POST /passport/register HTTP/1.1" 200 -
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:24:32] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:24:32] "GET /images/person01.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:24:32] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:24:32] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:24:32] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:24:32] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:24:32] "GET /news_list?cid=1&page=1 HTTP/1.1" 404 -
+DEBUG views.py:256 图片验证码内容是：DAFK
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:24:33] "GET /passport/image_code?imageCodeId=9f659b36-5162-4fe6-83ef-48d2b7d39256 HTTP/1.1" 200 -
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:24:57] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:24:57] "GET /images/person01.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:24:57] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:24:57] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:24:57] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:24:57] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:24:57] "GET /news_list?cid=1&page=1 HTTP/1.1" 404 -
+DEBUG views.py:256 图片验证码内容是：VVFB
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:24:59] "GET /passport/image_code?imageCodeId=9487215f-92c9-4089-b7dd-c9ec5ca1b09f HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:25:07] "POST /passport/sms_code HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:25:53] "POST /passport/sms_code HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:26:05] "POST /passport/sms_code HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:26:08] "POST /passport/sms_code HTTP/1.1" 200 -
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:27:12] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:27:12] "GET /images/person01.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:27:12] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:27:12] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:27:12] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:27:12] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:27:12] "GET /news_list?cid=1&page=1 HTTP/1.1" 404 -
+DEBUG views.py:256 图片验证码内容是：ZIA4
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:27:14] "GET /passport/image_code?imageCodeId=f8c60f07-8425-4dfb-b279-66f2a2cc503b HTTP/1.1" 200 -
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR app.py:1761 Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\redis\connection.py", line 492, in connect
+    sock = self._connect()
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\redis\connection.py", line 550, in _connect
+    raise err
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\redis\connection.py", line 538, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 2291, in wsgi_app
+    ctx.push()
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\ctx.py", line 377, in push
+    self.app, self.request
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask_session\sessions.py", line 132, in open_session
+    val = self.redis.get(self.key_prefix + sid)
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\redis\client.py", line 1264, in get
+    return self.execute_command('GET', name)
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\redis\client.py", line 772, in execute_command
+    connection = pool.get_connection(command_name, **options)
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\redis\connection.py", line 994, in get_connection
+    connection.connect()
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\redis\connection.py", line 497, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to 127.0.0.1:637. 由于目标计算机积极拒绝，无法连接。.
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:27:51] "GET / HTTP/1.1" 500 -
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:41:55] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:41:55] "GET /images/person01.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:41:55] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:41:55] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:41:55] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:41:55] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:41:55] "GET /news_list?cid=1&page=1 HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:42:05] "GET /favicon.ico HTTP/1.1" 404 -
+ERROR app.py:1761 Exception on /redis23 [GET]
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 1816, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 1831, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 1957, in make_response
+    'The view function did not return a valid response. The'
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:42:06] "GET /redis23 HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:42:21] "GET /redis1 HTTP/1.1" 200 -
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:42:53] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:42:53] "GET /images/person01.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:42:53] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:42:53] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:42:53] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:42:53] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:42:54] "GET /news_list?cid=1&page=1 HTTP/1.1" 404 -
+ERROR app.py:1761 Exception on /redis23 [GET]
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 1816, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 1831, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 1957, in make_response
+    'The view function did not return a valid response. The'
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:42:59] "GET /redis23 HTTP/1.1" 500 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:43:03] "GET /redis1 HTTP/1.1" 200 -
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:43:30] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:43:30] "GET /images/person01.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:43:30] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:43:30] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:43:30] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:43:30] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:43:30] "GET /news_list?cid=1&page=1 HTTP/1.1" 404 -
+DEBUG views.py:254 图片验证码内容是：J4Z5
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:43:32] "GET /passport/image_code?imageCodeId=5ac4a747-e9d0-4dc6-ad8c-f492e2a675be HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:43:44] "POST /passport/sms_code HTTP/1.1" 200 -
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:44:42] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:44:42] "GET /images/person01.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:44:42] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:44:42] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:44:42] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:44:42] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:44:42] "GET /news_list?cid=1&page=1 HTTP/1.1" 404 -
+DEBUG views.py:254 图片验证码内容是：RD7O
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:44:44] "GET /passport/image_code?imageCodeId=c17ba49b-21b8-4f61-8e02-13954e2dc18f HTTP/1.1" 200 -
+ERROR app.py:1761 Exception on /passport/sms_code [POST]
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\info\modules\passport\views.py", line 210, in send_sms_code
+    return jsonify(errno=RET.DATAERR, errmsg="验证码输入错误"+real_image_code)
+TypeError: can only concatenate str (not "bytes") to str
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:44:52] "POST /passport/sms_code HTTP/1.1" 500 -
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:45:43] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:45:43] "GET /images/person01.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:45:43] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:45:43] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:45:43] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:45:43] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:45:44] "GET /news_list?cid=1&page=1 HTTP/1.1" 404 -
+DEBUG views.py:254 图片验证码内容是：4QFI
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:45:45] "GET /passport/image_code?imageCodeId=8e7974f5-d08b-4167-a12e-5c364a2f9cf9 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:45:53] "POST /passport/sms_code HTTP/1.1" 200 -
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:46:22] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:46:22] "GET /images/person01.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:46:22] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:46:22] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:46:22] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:46:22] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:46:22] "GET /news_list?cid=1&page=1 HTTP/1.1" 404 -
+DEBUG views.py:254 图片验证码内容是：3HVN
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:46:24] "GET /passport/image_code?imageCodeId=5446a849-9f1f-4246-80da-d307b30793ce HTTP/1.1" 200 -
+ERROR app.py:1761 Exception on /passport/sms_code [POST]
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\info\modules\passport\views.py", line 210, in send_sms_code
+    return jsonify(errno=RET.DATAERR, errmsg=real_image_code)
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\json\__init__.py", line 321, in jsonify
+    dumps(data, indent=indent, separators=separators) + '\n',
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\json\__init__.py", line 179, in dumps
+    rv = _json.dumps(obj, **kwargs)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\json\__init__.py", line 239, in dumps
+    **kw).encode(obj)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\Administrator\PycharmProjects\Travelblog\venv\lib\site-packages\flask\json\__init__.py", line 81, in default
+    return _json.JSONEncoder.default(self, o)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type bytes is not JSON serializable
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:46:38] "POST /passport/sms_code HTTP/1.1" 500 -
+INFO _internal.py:88  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:50:49] "GET / HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:50:50] "GET /images/person01.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:50:50] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:50:50] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:50:50] "GET /images/news_pic.jpg HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:50:50] "GET /images/person.png HTTP/1.1" 404 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:50:50] "GET /news_list?cid=1&page=1 HTTP/1.1" 404 -
+DEBUG views.py:255 图片验证码内容是：YRZ9
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:50:51] "GET /passport/image_code?imageCodeId=21df68e8-8e3d-4a5b-ae32-b75148a85102 HTTP/1.1" 200 -
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:51:12] "POST /passport/sms_code HTTP/1.1" 200 -
+DEBUG views.py:255 图片验证码内容是：DBSC
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:52:16] "GET /passport/image_code?imageCodeId=b974a83a-71a9-4ecb-b841-f80c430421aa HTTP/1.1" 200 -
+DEBUG views.py:255 图片验证码内容是：IYJH
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:52:16] "GET /passport/image_code?imageCodeId=d0b06c40-fde7-4126-8dcb-f0b2f9930e45 HTTP/1.1" 200 -
+DEBUG views.py:255 图片验证码内容是：UX3R
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:52:17] "GET /passport/image_code?imageCodeId=55ce0421-7c6b-42bf-b585-d05fe4ffa81c HTTP/1.1" 200 -
+DEBUG views.py:255 图片验证码内容是：VLSO
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:52:17] "GET /passport/image_code?imageCodeId=a2db95c0-221e-41cc-911b-fe2cde3b9e7c HTTP/1.1" 200 -
+DEBUG views.py:255 图片验证码内容是：EWCM
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:52:17] "GET /passport/image_code?imageCodeId=a7e51e07-37f1-40d6-b651-803e0056e1b2 HTTP/1.1" 200 -
+DEBUG views.py:255 图片验证码内容是：YX5E
+INFO _internal.py:88 127.0.0.1 - - [19/Mar/2019 22:52:17] "GET /passport/image_code?imageCodeId=b70e00e4-2c0e-470d-b461-8052814c0db9 HTTP/1.1" 200 -

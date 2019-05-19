@@ -1,0 +1,95 @@
+<!doctype html>
+
+<html>
+  <head>
+    {% block head %}
+    <meta charset="utf-8">
+    <title>Chat Server</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+        <link rel="stylesheet" type="text/css" href="../../static/css/reset.css">
+     <link type="text/css" rel="stylesheet" href="../../static/css/style2.css">
+    <link rel="stylesheet" type="text/css" href="../../static/css/main.css">
+    <!-- optimize mobile viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    {% endblock %}
+  </head>
+  <body>
+    <div class="header_con">
+        <div class="header">
+            <a href="/" class="logo fl"><img src="../../static/news/images/logo.png" alt="logo"></a>
+            {% block categoryBlock %}
+                <ul class="menu1 fl" >
+                    {% for category in data.category_li2 %}
+                        {% if loop.index == 1 %}
+                            <li data-cid="{{ category.id }}" class="active"><a href="javascript:;">{{ category.name }}</a></li>
+                        {% else %}
+                            <li data-cid="{{ category.id }}"><a href="javascript:;">{{ category.name }}</a></li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+                  <ul>
+                    {% for followedd in data.user.followed %}
+                        <li ><a href="javascript:;">{{ followedd.id }}</a></li>
+                    {% endfor %}
+                   </ul>
+            {% endblock %}
+            {% if data.user %}
+                <!-- 用户登录后显示下面，隐藏上面 -->
+                <div class="user_login fr">
+                    <img src="{% if data.user.avatar_url %} {{ data.user.avatar_url }} {% else %}../../static/news/images/person01.png{% endif %}" class="lgin_pic">
+                    <a href="/user/info" id="nick_name">{{ data.user.nick_name }}</a>
+                    <a href="javascript:;" onclick="logout()">退出</a>
+                </div>
+            {% else %}
+                <div class="user_btns fr">
+                <a href="javascript:;" class="login_btn">登录</a> / <a href="javascript:;" class="register_btn">注册</a>
+            </div>
+            {% endif %}
+
+
+
+        </div>
+    </div>
+       <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.21.6/system.src.js"></script>
+
+    <script>
+      // https://github.com/systemjs/plugin-babel
+      SystemJS.config({
+        map: {
+        'plugin-babel': '../../static/systemjs-plugin-babel/plugin-babel.js',
+          'systemjs-babel-build': '../../static/systemjs-plugin-babel/systemjs-babel-browser.js'
+        },
+        transpiler: 'plugin-babel',
+        meta: {
+          '*.jsx': {
+            babelOptions: {
+              react: true
+            }
+          },
+          '*.js': {
+            babelOptions: {
+              react: true
+            }
+          }
+        }
+      });
+    </script>
+
+
+    <script>
+      SystemJS.import('../../static/chatroom23/js/main.js')
+    </script>
+    <div id="app"></div>
+
+
+
+    <script type="text/javascript" src="../../static/js/jquery-1.12.4.min.js"></script>
+      <script type="text/javascript" src="../../static/js/main.js"></script>
+    <script type="text/javascript" src="../../static/js/jquery22.js"></script>
+
+  </body>
+</html>

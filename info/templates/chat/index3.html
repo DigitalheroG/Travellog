@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hello World</title>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+
+
+    <!-- <script src="https://unpkg.com/babel-standalone@6.15.0/babel.js"></script> -->
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/3.1.6/system.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/3.1.6/extras/transform.js"></script>
+    <script src="./babel-transform.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.21.6/system.src.js"></script>
+    <script>
+
+      // https://github.com/systemjs/plugin-babel
+      SystemJS.config({
+        map: {
+          'plugin-babel': '../../static/systemjs-plugin-babel/plugin-babel.js',
+          'systemjs-babel-build': '../../static/systemjs-plugin-babel/systemjs-babel-browser.js'
+        },
+        transpiler: 'plugin-babel',
+        meta: {
+          '*.jsx': {
+            babelOptions: {
+              react: true
+            }
+          },
+          '*.js': {
+            babelOptions: {
+              react: true
+            }
+          }
+        }
+      });
+    </script>
+
+
+    <script>
+      SystemJS.import('../../static/js/code.js')
+    </script>
+  </head>
+  <body>
+    <div id="root" ></div >
+    <!--
+      Note: this page is a great way to try React but it's not suitable for production.
+      It slowly compiles JSX with Babel in the browser and uses a large development build of React.
+
+      Read this section for a production-ready setup with JSX:
+      https://reactjs.org/docs/add-react-to-a-website.html#add-jsx-to-a-project
+
+      In a larger project, you can use an integrated toolchain that includes JSX instead:
+      https://reactjs.org/docs/create-a-new-react-app.html
+
+      You can also use React without JSX, in which case you can remove Babel:
+      https://reactjs.org/docs/react-without-jsx.html
+    -->
+  </body>
+</html>

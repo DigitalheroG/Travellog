@@ -1,0 +1,131 @@
+{% extends 'news/base.html' %}
+
+{% block titleBlock %}
+首页-新经资讯
+{% endblock %}
+{% block cssBlock %}
+
+{% endblock %}
+
+
+{% block scriptBlock %}
+<script type="text/javascript" src="../../static/js/index.js"></script>
+    <script type="text/javascript">
+$(document).ready(function($){
+	$(".guidelist li").hover(
+		function () {
+			$(this).attr("class", "mouseon");
+		  },
+		  function () {
+			$(this).attr("class", "mouseout");
+		  }
+	);
+	$(".ftoollist li").mouseover(function(){
+		$(this).siblings().removeClass("on");
+		$(this).addClass("on");
+		var preNumber=$(this).prevAll().size();
+		$(".fimglist li").removeClass("onpre");
+		$(".fimglist li:nth-child("+preNumber+")").addClass("onpre");
+		var margin = 990;
+		margin = margin *preNumber;
+		margin = margin * -1;
+		$(".fimglist").stop().animate({marginLeft: margin + "px"}, {duration: 500});
+	});
+});
+</script>
+
+{% endblock %}
+
+{% block contentBlock %}
+    <div class="focus1">
+	<div class="focusbox">
+		<div class="focusimg">
+			<ul class="fimglist clearfix">
+				<li><a href="#"><img src="../../static/images/Gintama.jpg" title="17素材"></a></li>
+				<li><a href="#"><img src="../../static/images/SteinsGate.jpg" title="17素材"></a></li>
+				<li><a href="#"><img src="../../static/images/Unicorn.jpg" title="17素材"></a></li>
+				<li><a href="#"><img src="../../static/images/Berserk.jpg" title="17素材"></a></li>
+				<li><a href="#"><img src="../../static/images/SummerWars.jpg" title="17素材"></a></li>
+				<li><a href="#"><img src="../../static/images/akito.jpg" title="17素材"></a></li>
+				<li><a href="#"><img src="../../static/images/EVA.jpg" title="17素材"></a></li>
+			</ul>
+		</div>
+		<div class="focustool">
+			<ul class="ftoollist clearfix">
+				<!--通过控制该ul的left值来实现列表的左右移动，增量为931px-->
+				<li class="on">
+					<a href="#">
+						<img src="../../static/images/Gintama_s.jpg">
+						<p class="imgname">银魂剧场版</p>
+						<p class="imgshortcat">永远的万事屋</p>
+					</a>
+				</li>
+				<!--当前项时为该li添加class: on-->
+				<li>
+					<a href="#">
+						<img src="../../static/images/SteinsGate_s.jpg">
+						<p class="imgname">石头门剧场版</p>
+						<p class="imgshortcat">负荷领域的既视感</p>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="../../static/images/Unicorn_s.jpg">
+						<p class="imgname">高达UC</p>
+						<p class="imgshortcat">Gundam Unicorn</p>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="../../static/images/Berserk_s.jpg">
+						<p class="imgname">剑风传奇</p>
+						<p class="imgshortcat">黄金时代</p>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="../../static/images/SummerWars_s.jpg">
+						<p class="imgname">夏日大作战</p>
+						<p class="imgshortcat">Summer Wars</p>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="../../static/images/akito_s.jpg">
+						<p class="imgname">亡国的阿基德</p>
+						<p class="imgshortcat">Code Geass</p>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="../../static/images/EVA_s.jpg">
+						<p class="imgname">新EVA剧场版</p>
+						<p class="imgshortcat">New Evangelion</p>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+    <div class="advert">
+        <ul class="menu fl">
+                    {% for category in data.category_li %}
+                        {% if loop.index == 1 %}
+                            <li data-cid="{{ category.id }}" class="active"><a href="javascript:;">{{ category.name }}</a></li>
+                        {% else %}
+                            <li data-cid="{{ category.id }}"><a href="javascript:;">{{ category.name }}</a></li>
+                        {% endif %}
+                    {% endfor %}
+                  <div class="publish">
+                      <a><i></i>发布足迹</a>
+         </div>
+                </ul>
+         <div class="advert1" style="background:url(../../static/images/11111.png)"></div>
+
+    </div>
+<ul class="list_con fl"></ul>
+
+
+{% endblock %}
+
